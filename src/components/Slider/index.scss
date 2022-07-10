@@ -1,0 +1,85 @@
+@use "../../constants/constants";
+
+.slider {
+    width: 598px;
+    margin: auto;
+    text-align: center;
+
+    @media screen and (max-width: 592px) {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 300;
+        font-size: 72px;
+        line-height: 83px;
+        color: constants.$light-grey;
+
+        @media screen and (max-width: 592px) {
+            font-size: 52px;
+            line-height: 63px;
+        }
+    }
+
+    &__description {
+        padding-top: 32px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: constants.$light-grey;
+
+        @media screen and (max-width: 592px) {
+            padding-top: 22px;
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        padding: 16px 96px;
+        margin: 80px 0;
+        border: 2px solid;
+        border-image: constants.$purple-gradient;
+        border-image-slice: 1;
+        text-decoration: none;
+        font-size: 18px;
+        background-image: constants.$purple-gradient;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media screen and (max-width: 592px) {
+            padding: 10px 75px;
+            margin: 50px 0;
+        }
+
+        &:hover {
+            background: constants.$purple-gradient;
+            -webkit-text-fill-color: constants.$light-grey;
+        }
+    }
+
+    &__dots {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        margin: auto;
+    }
+
+    &__dot {
+        padding: 4px;
+        border: 4px solid;
+        border-color: constants.$dot-color;
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+
+        &--active {
+            border-color: constants.$white;
+        }
+
+        &:hover {
+            border-color: constants.$dot-hover;
+        }
+    }
+}

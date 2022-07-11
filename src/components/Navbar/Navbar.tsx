@@ -1,5 +1,5 @@
 import "./index.scss";
-import { ReactComponent as Logo } from "../assets/logo.svg"
+import { ReactComponent as Logo } from "../../assets/logo.svg"
 
 function Navbar() {
     return (

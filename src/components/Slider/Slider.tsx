@@ -1,6 +1,6 @@
 import "./index.scss";
 
-function Slider() {
+const Slider = () => {
     return (
         <div className="slider">
             <h1 className="slider__title">The Power of Simplicity</h1>

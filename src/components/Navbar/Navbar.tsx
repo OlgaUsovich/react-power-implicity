@@ -1,7 +1,7 @@
 import "./index.scss";
 import { ReactComponent as Logo } from "../../assets/logo.svg"
 
-function Navbar() {
+const Navbar = () => {
     return (
         <header className="navbar">
             <Logo />

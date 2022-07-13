@@ -13,7 +13,7 @@ body {
   height: 100%;
 }
 
-#root {
+.root {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,7 +27,7 @@ body {
   flex-direction: column;
   max-width: 1410px;
   height: 1010px;
-  margin: 0 5px;
+  margin: 15px;
   border-radius: 32px;
   box-shadow: constants.$container-shadow;
   background: constants.$dark-gradient;
@@ -35,6 +35,5 @@ body {
   @media screen and (max-width: 592px) {
     width: 95%;
     height: fit-content;
-    margin: 15px;
   }
 }

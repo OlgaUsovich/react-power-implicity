@@ -32,7 +32,7 @@ body {
   box-shadow: constants.$container-shadow;
   background: constants.$dark-gradient;
 
-  @media screen and (max-width: 592px) {
+  @media screen and (max-width: 768px) {
     width: 95%;
     height: fit-content;
   }
